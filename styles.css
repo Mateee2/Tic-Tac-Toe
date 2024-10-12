@@ -1,0 +1,137 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #ff5f6d, #ffc3a0);
+    background-size: 400% 400%;
+    animation: gradientAnimation 10s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Gradient Animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Tic-Tac-Toe Board */
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    border: 5px solid #fff;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.cell:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.cell.x {
+    color: red;
+}
+
+.cell.o {
+    color: green;
+}
+
+/* Status and Game Over Text */
+#status-container {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Restart Button */
+#restart-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #ff5f6d;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#restart-button:hover {
+    background-color: #ff3b47;
+}
+
+/* Match Records */
+#match-records {
+    margin-top: 20px;
+}
+
+#match-records p {
+    font-size: 1.2rem;
+}
+
+#title {
+    position: absolute;
+    top: 20px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Footer Text - mate ejibia */
+#footer-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

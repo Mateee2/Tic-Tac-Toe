@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Footer text */
+        #footer {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 24px; /* Increased font size */
+            color: #000;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Title -->
+    <div id="title">Tic-Tac-Toe</div>
+
+    <!-- Game Container -->
+    <div id="game-container">
+        <!-- Restart Button -->
+        <button id="restart-button">Restart</button>
+        <!-- Tic-Tac-Toe Game Board -->
+        <div id="board">
+            <div class="cell" data-index="0"></div>
+            <div class="cell" data-index="1"></div>
+            <div class="cell" data-index="2"></div>
+            <div class="cell" data-index="3"></div>
+            <div class="cell" data-index="4"></div>
+            <div class="cell" data-index="5"></div>
+            <div class="cell" data-index="6"></div>
+            <div class="cell" data-index="7"></div>
+            <div class="cell" data-index="8"></div>
+        </div>
+
+        <!-- Status -->
+        <div id="status-container">
+            <div id="status">Your Turn</div>
+        </div>
+    </div>
+
+    <!-- Footer Text -->
+    <div id="footer">Mate Ejibia</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
